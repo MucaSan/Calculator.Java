@@ -4,13 +4,13 @@ public class calculator {
     public static void main(String args[]){
         Scanner myObject = new Scanner(System.in);
         String condition = "Y";
-        while (condition == "Y"){
+        while (condition.equals("Y")){
             Scanner myobj1 = new Scanner(System.in);
             Scanner myobj2 = new Scanner(System.in);
             Scanner myCondition = new Scanner(System.in);
-            System.out.println("Insert the desired mathematical operation (+, -, * or /");
+            System.out.println("Insert the desired mathematical operation (+, -, * or /)");
             String choice = myObject.nextLine();
-            if (choice == "+"){
+            if (choice.equals("+")){
                 System.out.println("Insert the first number!:");
                 float num1 = myobj1.nextFloat();
                 System.out.println("Insert the second number!:");
@@ -19,7 +19,7 @@ public class calculator {
                 System.out.println("Would you like to calculate again? (Y/N)");
                 condition = myCondition.nextLine().toUpperCase();
             }
-            else if(choice == "-"){
+            else if(choice.equals("-")){
                 System.out.println("Insert the first number!:");
                 float num1 = myobj1.nextFloat();
                 System.out.println("Insert the second number!:");
@@ -28,7 +28,7 @@ public class calculator {
                 System.out.println("Would you like to calculate again? (Y/N)");
                 condition = myCondition.nextLine().toUpperCase();
             }
-            else if(choice == "*"){
+            else if(choice.equals("*")){
                 System.out.println("Insert the first number!:");
                 float num1 = myobj1.nextFloat();
                 System.out.println("Insert the second number!:");
@@ -37,7 +37,7 @@ public class calculator {
                 System.out.println("Would you like to calculate again? (Y/N)");
                 condition = myCondition.nextLine().toUpperCase();
             }
-            else if(choice == "/"){
+            else if(choice.equals("/")){
                 System.out.println("Insert the first number!:");
                 float num1 = myobj1.nextFloat();
                 System.out.println("Insert the second number!:");
